@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Elearn.Application\Elearn.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Protobuf" Version="3.21.9" />
+        <PackageReference Include="Grpc.AspNetCore" Version="2.49.0" />
+        <PackageReference Include="Grpc.Core" Version="2.46.5" />
+        <PackageReference Include="Grpc.Net.Client" Version="2.49.0" />
+        <PackageReference Include="Grpc.Net.Client.Web" Version="2.49.0" />
+        <PackageReference Include="Grpc.Tools" Version="2.50.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="Protos\rpc_answer.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_lecture.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_user.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_question.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_date.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_comment.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_lecture_vote.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_teacher.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_search.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_university.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_pagination.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_student.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <Protobuf Include="Protos\rpc_country.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+        <None Remove="Protos\rpc_moderator.proto" />
+        <Protobuf Include="Protos\rpc_moderator.proto" GrpcServices="Client" ProtoRoot="Protos\" />
+    </ItemGroup>
+
+</Project>
