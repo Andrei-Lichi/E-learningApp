@@ -3,9 +3,10 @@ A E-learning application as a heterogeneous distribute system written in c# and 
 
 An E-learn application written available in multiple langauges where students all over Europe can get access to free and high quality study materials.
 <br>
-[Documentation](https://github.com/Andrei-Lichi/MusicApp/files/10439805/ProjectAndProcessReport.pdf)
+[Documentation.pdf](https://github.com/Andrei-Lichi/E-learningApp/files/10439966/ProjectAndProcessReport.pdf)
 <br>
-[Appendices.zip](https://github.com/Andrei-Lichi/MusicApp/files/10439909/Appendices.zip)
+[Appendices.zip](https://github.com/Andrei-Lichi/E-learningApp/files/10439965/Appendices.zip)
+
 
 ## Features
 
