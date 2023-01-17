@@ -26,7 +26,7 @@ An E-learn application written available in multiple langauges where students al
 
 **Tier2(Application Tier):** C# (connected to the third tier thorugh gRPC)
 
-**Tier3(Data tier):** Java, mySQL (the connection with the database is made with JPA rapository from Maven)
+**Tier3(Data tier):** Java, mySQL (the connection with the database is made with JPA rapository)
 
 
 ## Lessons Learned
