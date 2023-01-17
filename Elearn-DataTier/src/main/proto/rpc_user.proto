@@ -1,0 +1,45 @@
+syntax = "proto3"; // Use the latest proto syntax
+
+option java_multiple_files = true;
+option java_package = "via.dk.elearn.protobuf";
+
+import "rpc_university.proto";
+import "rpc_country.proto";
+service UserService {
+  rpc GetUserByName (Name) returns (UserModel);
+  rpc GetUserByUsername (UserName) returns (UserModel);
+  rpc CreateNewUser (UserModel) returns (UserModel);
+  rpc GetUserByID(UserId) returns (UserModel);
+  rpc UpdateUser(UserModel) returns (UserModel);
+  rpc DeleteUser(UserModel) returns(Nothing);
+  rpc GetAllUsers(UserId) returns (stream UserModel);
+
+}
+
+message UserModel {
+  int64 id = 1;
+  string username = 2;
+  string email = 3;
+  string name = 4;
+  string password =5;
+  string image = 6;
+  string role = 7;
+  int32 securityLevel = 8;
+  UniversityModel university = 9;
+  bool approved = 10;
+  CountryModel country = 11;
+}
+
+message UserId{
+  int64 id = 1;
+}
+
+message UserName {
+  string username = 1;
+}
+
+message Name {
+  string name = 1;
+}
+
+message Nothing{}
