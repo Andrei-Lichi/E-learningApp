@@ -1,0 +1,21 @@
+﻿@inherits LayoutComponentBase
+
+
+<NavMenu/>
+<main>
+    <CultureSelect></CultureSelect>
+    <article class="content">
+        @Body
+    </article>
+</main>
+
+<Footer></Footer>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+<MudThemeProvider @bind-IsDarkMode="@_isDarkMode" Theme="_theme"/>
+
+@code {
+    private MudTheme _theme = new();
+    private bool _isDarkMode = true;
+
+}
